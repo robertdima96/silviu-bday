@@ -424,6 +424,32 @@
       box-shadow: 0 0 6px rgba(228,174,57,0.5);
     }
 
+    .btn-inspect {
+      position: relative;
+      z-index: 1;
+      display: inline-block;
+      padding: 12px 36px;
+      background: transparent;
+      color: var(--gold);
+      font-family: inherit;
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      text-decoration: none;
+      border: 1px solid rgba(228,174,57,0.4);
+      clip-path: polygon(8px 0%, 100% 0%, calc(100% - 8px) 100%, 0% 100%);
+      transition: background 0.2s, border-color 0.2s, transform 0.15s;
+      touch-action: manipulation;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .btn-inspect:hover {
+      background: rgba(228,174,57,0.1);
+      border-color: var(--gold);
+      transform: scale(1.04);
+    }
+    .btn-inspect:active { transform: scale(0.97); }
+
     /* ══════════════════════════════════════
        CONFETTI
     ══════════════════════════════════════ */
@@ -479,6 +505,9 @@
   <div class="res-meta">Field-Tested &nbsp;&#183;&nbsp; Pattern #449 &nbsp;&#183;&nbsp; 0.2256</div>
   <div class="res-line"></div>
   <p class="res-msg">Happy Birthday <strong>Silviu</strong> &#127874;<br>This one&rsquo;s real &mdash; and it&rsquo;s all yours.</p>
+  <a class="btn-inspect" href="https://3d.skinport.com/?link=steam://run/730//+csgo_econ_action_preview%20A8B8027E6B3517A9B05CAB8806AC80AE98AB906A12345BABE869ABC02B282828A4D8ACEEA68253" target="_blank" rel="noopener">
+    &#128269; Inspect in 3D
+  </a>
 </div>
 
 <script>
