@@ -135,7 +135,7 @@
 
   <div class="card">
     <div class="card-top">&#9733; Birthday Gift &#9733;</div>
-    <canvas id="qr-canvas"></canvas>
+    <img id="qr-img" src="https://api.qrserver.com/v1/create-qr-code/?size=260x260&data=https://robertdima96.github.io/silviu-bday/&color=0e1521&bgcolor=ffffff&margin=8" alt="QR Code" width="260" height="260" style="border-radius:4px;display:block;">
     <div class="card-name">Happy Birthday<br><span>Silviu</span></div>
     <div class="card-hint">Scan to open your gift</div>
   </div>
@@ -143,17 +143,5 @@
   <button class="btn-print" onclick="window.print()">Print QR Code</button>
   <div class="url-hint">robertdima96.github.io/silviu-bday</div>
 
-  <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.3/build/qrcode.min.js"></script>
-  <script>
-    QRCode.toCanvas(
-      document.getElementById('qr-canvas'),
-      'https://robertdima96.github.io/silviu-bday/',
-      {
-        width: 260,
-        margin: 2,
-        color: { dark: '#0e1521', light: '#ffffff' }
-      }
-    );
-  </script>
 </body>
 </html>
